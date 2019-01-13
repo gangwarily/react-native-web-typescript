@@ -17,6 +17,6 @@ describe('App component unit test', () => {
         const text = view.findByType(Text);
         expect(root.findAllByType(Text).length).toEqual(1);
         // TODO: Figure out source of this issue
-        // expect(text.children[0]).toEqual('Hello!');
+        expect(text.props.children).toEqual('Hello!');
     })
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsc && parcel index.html --open -p 3000 ",
     "build": "rm -rf dist && tsc && parcel build index.html",
-    "test": "jest --debug"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,6 @@
   "browserslist": "> 0.25%, not dead",
   "dependencies": {
     "parcel-bundler": "^1.10.3",
-    "postcss-modules": "^1.4.1",
     "react": "^16.6.3",
     "react-art": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -29,9 +28,8 @@
     "@types/react-native": "^0.57.27",
     "@types/react-test-renderer": "^16.0.3",
     "babel-core": "^6.26.3",
-    "babel-preset-react-native": "^4.0.1",
     "babel-plugin-module-resolver": "^3.1.1",
-    "identity-obj-proxy": "^3.0.0",
+    "babel-preset-react-native": "^4.0.1",
     "jest": "^23.6.0",
     "react-test-renderer": "^16.6.3",
     "ts-jest": "^23.10.5"
@@ -46,9 +44,6 @@
       "tsx",
       "js"
     ],
-    "moduleNameMapper": {
-      "\\.css": "identity-obj-proxy"
-    },
     "testMatch": [
       "**/__tests__/**/*.test.+(ts|tsx|js)"
     ]
